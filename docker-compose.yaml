@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  backend:
+      build: "./api"
+      container_name: hngbackend
+      ports:
+      - "8008:8008"
+        
+  frontend:
+      build: "./frontend"
+      container_name: hngfrontend
+      ports:
+      - "3000:3000"
+      stdin_open: true
+      tty: true
