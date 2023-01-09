@@ -15,6 +15,7 @@ jobs:
         working-directory: ./frontend
 
     steps:
+      - uses: actions/checkout@v2
       - name: Build
         run: cd action
       - run: touch test
