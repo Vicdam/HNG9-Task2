@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build
-        run: cd action
+        run: cd /home/ubuntu/actions
       - run: touch test
 
 
