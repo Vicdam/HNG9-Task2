@@ -14,11 +14,12 @@ jobs:
       run:
         working-directory: ./frontend
 
-    steps:
+    steps: 
       - uses: actions/checkout@v2
-      - name: Build
-        run: cd /home/ubuntu/actions
-      - run: touch test
+        with:
+          script: |
+            touch test
+            cd /home/ubuntu/actions
 
 
     # - name: Build
